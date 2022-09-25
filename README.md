@@ -48,3 +48,9 @@ To stop the confettis, call
 ```Swift
 stopConfettiTimer()
 ```
+
+
+
+Credits:
+The code above has been produced based the following extange on stackoverflow:  https://stackoverflow.com/questions/64956392/swiftui-confetti-animation
+
