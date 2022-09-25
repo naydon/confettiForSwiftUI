@@ -5,7 +5,7 @@ Generate confettis in SwiftUI
 To generate the confettis in your SwiftUI view, add the Confetti.swift file in your project, then insert the code below in your ContentView struct:
 
 
-```
+```Swift
     @State var confettiAnimate = [false]
     @State var confettiFinishedAnimationCouter = 0
     @State var confettiCounter = 0
@@ -29,7 +29,7 @@ To generate the confettis in your SwiftUI view, add the Confetti.swift file in y
 ```
 
 Whereever you want the confettis to be displayed, insert the following code in your view :
-'''
+```Swift
 VStack{
                         ZStack{
                             ForEach(confettiFinishedAnimationCouter...confettiCounter, id:\.self){ i in
@@ -37,14 +37,14 @@ VStack{
                             }
                         }
                     }
-'''
+```
 
 And then to run the confettis, call 
-'''
+```Swift
 startConfettiTimer()
-'''
+```
 
 To stop the confettis, call
-'''
+```Swift
 stopConfettiTimer()
-'''
+```
