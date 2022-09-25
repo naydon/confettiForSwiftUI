@@ -31,12 +31,12 @@ To generate the confettis in your SwiftUI view, add the Confetti.swift file in y
 Whereever you want the confettis to be displayed, insert the following code in your view :
 ```Swift
 VStack{
-                        ZStack{
-                            ForEach(confettiFinishedAnimationCouter...confettiCounter, id:\.self){ i in
-                                ConfettiContainer(animate:$confettiAnimate[i], finishedAnimationCouter:$confettiFinishedAnimationCouter, num:1)
-                            }
-                        }
-                    }
+    ZStack{
+        ForEach(confettiFinishedAnimationCouter...confettiCounter, id:\.self){ i in
+            ConfettiContainer(animate:$confettiAnimate[i], finishedAnimationCouter:$confettiFinishedAnimationCouter, num:1)
+        }
+    }
+}
 ```
 
 And then to run the confettis, call 
